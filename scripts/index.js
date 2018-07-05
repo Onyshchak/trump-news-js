@@ -28,11 +28,12 @@ function process_resp(data) {
         <div class="news-component">
             ${img}
             <div class="news-component--content">
-            <div class="news-component--date">${item.date || "no date"}</div>
-            <h1 ${(item.title == undefined) ? 'style="display: none"' : ''} class="news-component--title">${item.title}</h1>
-            <div ${(item.description == undefined) ? 'style="display: none"' : ''} class="news-component--text">${item.description}</div>
-            <iframe class="news-component--video" src="https://www.youtube.com/embed/R8Wde1fFvPg"></iframe>
-        </div></div></div></div>`;
+                <div class="news-component--date">${item.date || "no date"}</div>
+                <h1 ${(item.title == undefined) ? 'style="display: none"' : ''} class="news-component--title">${item.title}</h1>
+                <div ${(item.description == undefined) ? 'style="display: none"' : ''} class="news-component--text">${item.description}</div>
+                <iframe class="news-component--video" src="https://www.youtube.com/embed/R8Wde1fFvPg"></iframe>
+             </div>
+        </div>`;
     })
 }
 
